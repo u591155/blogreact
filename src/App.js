@@ -1,26 +1,44 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Footer from './components/FooterComponent';
+import Home from './components/HomeComponent';
+import FitnessAdditionalR from './components/AdditionalReads/FitnessReadsComponent';
+import HealthAdditionalR from './components/AdditionalReads/HealthReadsComponent';
+import SocietyAdditionalR from './components/AdditionalReads/SocietyReadsComponent';
+import LawAdditionalR from './components/AdditionalReads/LawReadsComponent';
+import EconomyAdditionalR from './components/AdditionalReads/EconomyReadsComponent';
+import PoliticalAdditionalR from './components/AdditionalReads/PoliticsReadsComponent';
+import EconomyResource from './components/Resources/EconomyResourceComponent';
+import FitnessResource from './components/Resources/FitnessResourceComponent';
+import HealthResource from './components/Resources/HealthResourceComponent';
+import LawResource from './components/Resources/LawResourceComponent';
+import PoliticsResource from './components/Resources/PoliticsResourceComponent';
+import SocietyResource from './components/Resources/SocietyResourceComponent';
+import NavBar from './components/NavBarComponent';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+    render() {
+        return (
+                <div className="container">
+                <Home />
+                <NavBar />
+                <FitnessAdditionalR />
+                <HealthAdditionalR />
+                <SocietyAdditionalR />
+                <LawAdditionalR />
+                <EconomyAdditionalR />
+                <LawAdditionalR />
+                <PoliticalAdditionalR />
+                <Footer />
+                <EconomyResource />
+                <FitnessResource />
+                <HealthResource />
+                <LawResource />
+                <PoliticsResource />
+                <SocietyResource />
+                </div>
+        );
+    }
 }
 
 export default App;
