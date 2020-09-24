@@ -1,33 +1,15 @@
 import React, { Component } from 'react';
+import {economyData} from '../sharedData/sharedData'
 
 class EconomyResource extends Component {
     constructor(props){
       super(props);
       this.state = {
-         resources: [
-           {
-             id:0,
-             title: 'Government Services And Information',
-             text: 'Partnering with federal agencies, we reach out to people where they are, to connect them with their government',
-             link: 'https://www.usa.gov/', 
-           },
-                    {
-             id:1,
-             title: 'Economic knowledge',
-             text: 'The Balance makes personal finance easy to understand. It is home to experts who provide clear, practical advice on managing your money.',
-             link: 'https://www.thebalance.com/about-us',  
-           },
-                    {
-             id:2,
-             title: 'Loans And Credit',
-             text: 'Everyone needs help when looking to make purchases whether big or small, so here we help you shine some light with comparisons',
-             link: 'https://www.nerdwallet.com/blog/finance/how-to-build-a-budget/',  
-           },
-         ] 
+        economyData
       };
     }
     render(){
-      const ResourceCard = this.state.resources.map(resource => {
+      const ResourceCard = this.state.economyData.map(resource => {
         return (
           <div className="col-sm-8 col-md-6 col-lg">     
             <div className="card-body">

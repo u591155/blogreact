@@ -1,33 +1,16 @@
 import React, { Component } from 'react';
+import {societyData} from '../sharedData/sharedData'
+
 
 class SocietyResource extends Component {
     constructor(props){
       super(props);
       this.state = {
-         resources: [
-           {
-             id:0,
-             title: 'Shop Small And Help Your Community',
-             text: 'Local business need help, find ways that you can shop the things you need local.',
-             link: 'https://www.moneycrashers.com/shop-local-support-small-business-local-economy/', 
-           },
-                    {
-             id:1,
-             title: 'Local Events To Help You Stay Connected',
-             text: 'Find out what is happening locally to stay connected about what is going on.',
-             link: 'https://www.eventbrite.com/d/ca--san-francisco/community--events/',  
-           },
-                    {
-             id:2,
-             title: 'Society And Loss Of Housing',
-             text: "Losing the place is very difficult, but there are many resources that can help.",
-             link: 'https://chp-sf.org/properties-landing/',  
-           },
-         ] 
+        societyData
       };
     }
     render(){
-      const ResourceCard = this.state.resources.map(resource => {
+      const ResourceCard = this.state.societyData.map(resource => {
         return (
           <div className="col-sm-8 col-md-6 col-lg">     
             <div className="card-body">

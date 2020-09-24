@@ -1,33 +1,15 @@
 import React, { Component } from 'react';
+import {lawData} from '../sharedData/sharedData'
 
 class LawResource extends Component {
     constructor(props){
       super(props);
       this.state = {
-         resources: [
-           {
-             id:0,
-             title: 'American Civil Liberties Union',
-             text: 'With 100 years of experience fighting for rights, they are experts on change.',
-             link: 'https://www.aclu.org/', 
-           },
-                    {
-             id:1,
-             title: "Lawyer's Directory",
-             text: 'Help finding a lawyer and tips on what you can do to protect your rights.',
-             link: 'https://www.avvo.com/',  
-           },
-                    {
-             id:2,
-             title: 'Evictions And Your Rights',
-             text: "In big cities most people rent, but what happens if you can't pay?",
-             link: 'https://flip.lease/learn/being-evicted/eviction-laws',  
-           },
-         ] 
+        lawData
       };
     }
     render(){
-      const ResourceCard = this.state.resources.map(resource => {
+      const ResourceCard = this.state.lawData.map(resource => {
         return (
           <div className="col-sm-8 col-md-6 col-lg">     
             <div className="card-body">

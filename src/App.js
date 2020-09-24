@@ -14,7 +14,16 @@ import HealthResource from './components/Resources/HealthResourceComponent';
 import LawResource from './components/Resources/LawResourceComponent';
 import PoliticsResource from './components/Resources/PoliticsResourceComponent';
 import SocietyResource from './components/Resources/SocietyResourceComponent';
+import EconomyPost from './components/PostBlog/economyPost';
+import FitnessPost from './components/PostBlog/fitnessPost';
+import HealthPost from './components/PostBlog/healthPost';
+import LawPost from './components/PostBlog/lawPost';
+import PoliticsPost from './components/PostBlog/politicsPost';
+import SocietyPost from './components/PostBlog/societyPost';
+import EconomyModal from './components/modalComponents/economyModal';
 import NavBar from './components/NavBarComponent';
+import ModalTable from './components/modalComponents/modalTable'
+
 
 class App extends Component {
     render() {
@@ -22,6 +31,7 @@ class App extends Component {
                 <div className="container">
                 <Home />
                 <NavBar />
+                <ModalTable />
                 <FitnessAdditionalR />
                 <HealthAdditionalR />
                 <SocietyAdditionalR />
@@ -36,6 +46,13 @@ class App extends Component {
                 <LawResource />
                 <PoliticsResource />
                 <SocietyResource />
+                <EconomyPost />
+                <FitnessPost />
+                <HealthPost />
+                <LawPost />
+                <PoliticsPost />
+                <SocietyPost />
+                <EconomyModal />
                 </div>
         );
     }
