@@ -52,7 +52,6 @@ class App extends Component {
                 <LawPost />
                 <PoliticsPost />
                 <SocietyPost />
-                <EconomyModal />
                 </div>
         );
     }
