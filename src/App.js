@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Footer from './components/FooterComponent';
 import Home from './components/HomeComponent';
+import Menu from './components/Menu';
 import FitnessAdditionalR from './components/AdditionalReads/FitnessReadsComponent';
 import HealthAdditionalR from './components/AdditionalReads/HealthReadsComponent';
 import SocietyAdditionalR from './components/AdditionalReads/SocietyReadsComponent';
@@ -30,6 +31,7 @@ class App extends Component {
         return (
                 <div className="container">
                 <Home />
+                <Menu />
                 <NavBar />
                 <ModalTable />
                 <FitnessAdditionalR />
