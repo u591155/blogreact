@@ -1,18 +1,20 @@
 import React from 'react';
-import { Nav, NavItem, NavLink } from 'reactstrap';
+import { Nav, NavItem} from 'reactstrap';
+import { NavLink } from 'react-router-dom'
+
 
 const NavBar = (props) => {
   return (
     <div>
       <Nav>
         <NavItem>
-          <NavLink href="#"><i className="fa fa-home fa-md"/> Home</NavLink>
+          <NavLink to="#"><i className="fa fa-home fa-md"/> Home</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="#"><i class="fa fa-coffee fa-md"/> Menu</NavLink>
+          <NavLink to="/PoliticsPage"><i class="fa fa-coffee fa-md"/> Menu</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="#"><i class="fa fa-book fa-md"/> Blog</NavLink>
+          <NavLink to="/LawPage"><i class="fa fa-coffee fa-md"/> Blog</NavLink>
         </NavItem>
       </Nav>
     </div>
