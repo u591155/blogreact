@@ -7,8 +7,9 @@ import NavBar from '../components/NavBarComponent';
 import ModalTable from '../components/modalComponents/modalTable';
 import PoliticsPage from './BlogPages/PoliticsPage';
 import LawPage from './BlogPages/LawPage';
-import SideNavigation from './SideNavigation'
+import SideNavigation from './SideNavigation';
 import PoliticsResource from './Resources/PoliticsResourceComponent';
+import Menu from '../components/Menu';
 
 
 class Main extends Component {
