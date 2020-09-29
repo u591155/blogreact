@@ -5,6 +5,7 @@ import Footer from '../components/FooterComponent';
 import Home from '../components/HomeComponent';
 import NavBar from '../components/NavBarComponent';
 import ModalTable from '../components/modalComponents/modalTable';
+<<<<<<< HEAD
 import SideNavigation from './SideNavigation'
 import LawPost from './PostBlog/lawPost';
 import PoliticsPost from './PostBlog/politicsPost';
@@ -13,6 +14,13 @@ import EconomyPost from './PostBlog/economyPost';
 import FitnessPost from './PostBlog/fitnessPost';
 import HealthPost from './PostBlog/healthPost';
 
+=======
+import PoliticsPage from './BlogPages/PoliticsPage';
+import LawPage from './BlogPages/LawPage';
+import SideNavigation from './SideNavigation';
+import PoliticsResource from './Resources/PoliticsResourceComponent';
+import Menu from '../components/Menu';
+>>>>>>> 41e1c0fa851e6bbc6724df34f2620855a5410ece
 
 
 class Main extends Component {
