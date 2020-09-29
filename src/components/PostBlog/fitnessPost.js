@@ -1,7 +1,9 @@
 import React from 'react';
+import FitnessAdditionalR from '../AdditionalReads/FitnessReadsComponent'
 
 function FitnessPost() {
     return (
+    <React.Fragment>   
         <div className="col-sm col-md col-lg text-left mt-5">
             <h2 className="postTitle text-center">Fitness</h2>
             <br/>
@@ -39,6 +41,11 @@ function FitnessPost() {
             <p>You can find a variety of workout routines on YouTube, online articles, Instagram, books, magazines, or copying some Thai chi group at your local park. With gyms being locked down in California, I decided to enhance my home gym and get ahead of the curve. </p>
             <p>The options are endlessly, but your life has an expiration date. Lets make sure to follow all government health guidelines. Please, wear your masks and practice social distancing! While your at it, take a look at what you put in your body. Does this heal or hurt me? Take a look at your activity level for the week, have a I moved around a bit, exercised, and stretched my limbs? If your finding yourself answering no, then now more then ever is the time to make a change. </p>
         </div>
+        <div>
+            <FitnessAdditionalR />
+        </div>
+    
+    </React.Fragment>     
     )
 }
 

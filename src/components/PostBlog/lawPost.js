@@ -1,7 +1,9 @@
 import React from 'react';
+import LawAdditionalR from '../AdditionalReads/LawReadsComponent'
 
 function LawPost (){
     return(
+    <React.Fragment>    
         <div class="col-sm col-md col-lg mt-5" id="postSection">
             <h2 class="postTitle text-center">Law</h2>
             <br/>
@@ -45,6 +47,10 @@ function LawPost (){
             and under the guise of “public safety”, it’s a subjective test that’s hard to penalize and hold people accountable for. Further developments in the law should be made to protect all parties involved, protesters and forces alike, and help bridge 
             the gap of mistrust between community members and police forces.</p>
         </div>
+        <div>
+            <LawAdditionalR />
+        </div>
+    </React.Fragment>    
     )
 }
 

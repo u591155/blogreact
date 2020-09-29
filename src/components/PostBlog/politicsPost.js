@@ -1,7 +1,9 @@
 import React from 'react';
+import PoliticalAdditionalR from '../AdditionalReads/PoliticsReadsComponent';
 
 function PoliticsPost () {
     return(
+    <React.Fragment>  
         <div class="col-sm col-md col-lg mt-5" id="postSection">
             <h2 class="postTitle text-center">Politics</h2>
             <br/>
@@ -23,6 +25,10 @@ function PoliticsPost () {
             <p>With that controversial couple of lines the one thing that we should remember is that politics have set up a couple of rules, but it is up to the people to enforce them. Practice common sense and keep your six 
             feet distance, wash your hands and wear your mask. Many people argue that they are not in the category of the people that if infected would not face life threatening complications or symptoms at all, but just remember that we are doing it for those that would. As part of society we need to take care of each other and that starts with common sense regardless of politics.    </p>    
         </div>
+        <div>
+            <PoliticalAdditionalR />
+        </div>
+    </React.Fragment>      
     )
 }
 

@@ -25,3 +25,12 @@ h1{
     background-size: cover;
     background-attachment: fixed;
 } 
+
+.site-footer {
+    background-image: linear-gradient(#6A4C32, #654734);
+    padding: 20px 0;
+}
+
+.bottom-links ul{
+    color: black;
+}

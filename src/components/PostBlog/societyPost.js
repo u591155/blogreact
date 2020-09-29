@@ -1,7 +1,9 @@
 import React from 'react';
+import SocietyAdditionalR from '../AdditionalReads/SocietyReadsComponent'
 
 function SocietyPost (){
     return(
+    <React.Fragment>   
         <div class="col-sm col-md col-lg text-left mt-5" id="postSection">
             <h2 class="postTitle text-center">Society</h2>
             <br/>
@@ -29,6 +31,10 @@ function SocietyPost (){
             discipline in order to survive; these are still alive and hopefully it does not slow down until the change needed in our society is achieved. The question for you would be: What do you stand for? You might think that being neutral is okay or that you’re just one person so it won’t make a difference, but what if
             everybody thought that way? What would happen is this was affecting you or your loved ones? Would it matter then?</p>      
         </div>
+        <div>
+            <SocietyAdditionalR />
+        </div>
+    </React.Fragment>     
     )
 }
 

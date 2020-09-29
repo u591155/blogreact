@@ -40,7 +40,7 @@ class PoliticalAdditionalR extends Component {
       });
       
       return (
-        <div className="container mb-5">
+        <div className="container mt-5 mb-5">
          <div className="row mx-auto">   
             {addReadCard}
         </div>    

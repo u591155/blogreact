@@ -5,10 +5,14 @@ import Footer from '../components/FooterComponent';
 import Home from '../components/HomeComponent';
 import NavBar from '../components/NavBarComponent';
 import ModalTable from '../components/modalComponents/modalTable';
-import PoliticsPage from './BlogPages/PoliticsPage';
-import LawPage from './BlogPages/LawPage';
 import SideNavigation from './SideNavigation'
-import PoliticsResource from './Resources/PoliticsResourceComponent';
+import LawPost from './PostBlog/lawPost';
+import PoliticsPost from './PostBlog/politicsPost';
+import SocietyPost from './PostBlog/societyPost';
+import EconomyPost from './PostBlog/economyPost';
+import FitnessPost from './PostBlog/fitnessPost';
+import HealthPost from './PostBlog/healthPost';
+
 
 
 class Main extends Component {
@@ -20,13 +24,15 @@ class Main extends Component {
                 <NavBar />
                 <Row>
                 <SideNavigation />
-                <Switch><Route path='/PoliticsPage' component={PoliticsPage} /></Switch>
-                <Switch><Route path='/LawPage' component={LawPage} /></Switch>
+                <Switch><Route path='/HealthPage' component={HealthPost} /></Switch>
+                <Switch><Route path='/FitnessPage' component={FitnessPost} /></Switch>
+                <Switch><Route path='/EconomyPage' component={EconomyPost} /></Switch>
+                <Switch><Route path='/SocietyPage' component={SocietyPost} /></Switch>
+                <Switch><Route path='/PoliticsPage' component={PoliticsPost} /></Switch>
+                <Switch><Route path='/LawPage' component={LawPost} /></Switch>
                 </Row>
-                <Row>
                 <ModalTable />    
                 <Footer />
-                </Row>
             </div> 
         );
     }

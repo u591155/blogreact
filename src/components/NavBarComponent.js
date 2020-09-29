@@ -11,10 +11,10 @@ const NavBar = (props) => {
           <NavLink to="#"><i className="fa fa-home fa-md"/> Home</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to="/PoliticsPage"><i class="fa fa-coffee fa-md"/> Menu</NavLink>
+          <NavLink to="#"><i class="fa fa-coffee fa-md"/> Menu</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to="/LawPage"><i class="fa fa-coffee fa-md"/> Blog</NavLink>
+          <NavLink to="#"><i class="fa fa-coffee fa-md"/> Blog</NavLink>
         </NavItem>
       </Nav>
     </div>
