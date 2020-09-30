@@ -41,6 +41,7 @@ class PoliticalAdditionalR extends Component {
       
       return (
         <div className="container mt-5 mb-5">
+         <hr />    
          <div className="row mx-auto">   
             {addReadCard}
         </div>    

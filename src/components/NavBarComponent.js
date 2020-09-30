@@ -6,9 +6,9 @@ import { NavLink } from 'react-router-dom'
 const NavBar = (props) => {
   return (
     <div>
-      <Nav>
+      <Nav className="sticky-top">
         <NavItem>
-          <NavLink to="#"><i className="fa fa-home fa-md"/> Home</NavLink>
+          <NavLink className="nav-item" to="#"><i className="fa fa-home fa-md"/> Home</NavLink>
         </NavItem>
         <NavItem>
           <NavLink to="#"><i class="fa fa-coffee fa-md"/> Menu</NavLink>

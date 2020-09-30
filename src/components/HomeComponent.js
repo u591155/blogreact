@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Home(props) {
+function Home() {
     return (
         <div>
-            <header class="jumbotron jumbotron-fluid mainJumbo">
+            <header class="jumbotron jumbotron-fluid mainJumbo d-none d-sm-block">
                 <div class="container" id="test">
                     <div class="row">
                         <div class="col-10 heading">

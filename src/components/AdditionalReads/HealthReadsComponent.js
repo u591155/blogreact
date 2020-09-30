@@ -41,6 +41,7 @@ class HealthAdditionalR extends Component {
       
       return (
         <div className="container mb-5">
+        <hr />  
          <div className="row mx-auto">   
             {addReadCard}
         </div>    

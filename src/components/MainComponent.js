@@ -3,7 +3,6 @@ import {Row} from 'reactstrap';
 import { Switch, Route} from 'react-router-dom';
 import Footer from '../components/FooterComponent';
 import Home from '../components/HomeComponent';
-import NavBar from '../components/NavBarComponent';
 import ModalTable from '../components/modalComponents/modalTable';
 import SideNavigation from './SideNavigation'
 import LawPost from './PostBlog/lawPost';
@@ -14,6 +13,7 @@ import FitnessPost from './PostBlog/fitnessPost';
 import HealthPost from './PostBlog/healthPost';
 import PoliticsResource from './Resources/PoliticsResourceComponent';
 import Menu from '../components/Menu';
+import TestNav from './testNav';
 
 
 class Main extends Component {
@@ -22,7 +22,7 @@ class Main extends Component {
         return (
             <div className="container">
                 <Home />
-                <NavBar />
+                <TestNav />
                 <Row>
                 <SideNavigation />
                 <Switch><Route path='/HealthPage' component={HealthPost} /></Switch>
