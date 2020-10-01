@@ -12,30 +12,45 @@ import EconomyPost from './PostBlog/economyPost';
 import FitnessPost from './PostBlog/fitnessPost';
 import HealthPost from './PostBlog/healthPost';
 import PoliticsResource from './Resources/PoliticsResourceComponent';
-import Menu from '../components/Menu';
 import TestNav from './testNav';
+import Menu from './Menu'
 
 
 class Main extends Component {
     render() {
 
         return (
-            <div className="container">
-                <Home />
-                <TestNav />
-                <Row>
-                <SideNavigation />
-                <Switch><Route path='/HealthPage' component={HealthPost} /></Switch>
-                <Switch><Route path='/FitnessPage' component={FitnessPost} /></Switch>
-                <Switch><Route path='/EconomyPage' component={EconomyPost} /></Switch>
-                <Switch><Route path='/SocietyPage' component={SocietyPost} /></Switch>
-                <Switch><Route path='/PoliticsPage' component={PoliticsPost} /></Switch>
-                <Switch><Route path='/LawPage' component={LawPost} /></Switch>
-                </Row>
-                <ModalTable />    
-                <Footer />
-            </div> 
-        );
+					<div className='container'>
+						<Home />
+						<TestNav />
+						<Row>
+							<SideNavigation />
+							<Switch>
+								<Route path='/Menu' component={Menu} />
+							</Switch>
+							<Switch>
+								<Route path='/HealthPage' component={HealthPost} />
+							</Switch>
+							<Switch>
+								<Route path='/FitnessPage' component={FitnessPost} />
+							</Switch>
+							<Switch>
+								<Route path='/EconomyPage' component={EconomyPost} />
+							</Switch>
+							<Switch>
+								<Route path='/SocietyPage' component={SocietyPost} />
+							</Switch>
+							<Switch>
+								<Route path='/PoliticsPage' component={PoliticsPost} />
+							</Switch>
+							<Switch>
+								<Route path='/LawPage' component={LawPost} />
+							</Switch>
+						</Row>
+						<ModalTable />
+						<Footer />
+					</div>
+				);
     }
 }
 

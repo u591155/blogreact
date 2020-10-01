@@ -11,7 +11,7 @@ function TestNav () {
             <div className="collapse navbar-collapse" id="theBlogNavBar">   
                 <ul className="navbar-nav">
                     <li className="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-md"/> Home</a></li>
-                    <li className="nav-item"><a class="nav-link" href="menu.html"><i class="fa fa-coffee fa-md"/> Menu</a></li>
+                    <NavLink to="/Menu"><i class="fa fa-coffee fa-md"/> Menu</NavLink>
                     <li className="nav-item active"><a class="nav-link" href="home_blog.html"><i class="fa fa-book fa-md"/> Blog</a></li>
                 </ul>
             </div>   

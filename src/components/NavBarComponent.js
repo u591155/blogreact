@@ -1,6 +1,6 @@
 import React from 'react';
 import { Nav, NavItem} from 'reactstrap';
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
 
 
 const NavBar = (props) => {
@@ -11,10 +11,10 @@ const NavBar = (props) => {
           <NavLink className="nav-item" to="#"><i className="fa fa-home fa-md"/> Home</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to="#"><i class="fa fa-coffee fa-md"/> Menu</NavLink>
+          <NavLink to="/Menu"><i class="fa fa-coffee fa-md"/> Menu</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink to="#"><i class="fa fa-coffee fa-md"/> Blog</NavLink>
+          <NavLink to="#"><i class="fa fa-book fa-md"/> Blog</NavLink>
         </NavItem>
       </Nav>
     </div>

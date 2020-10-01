@@ -123,3 +123,24 @@ export const societyData = [
       link: 'https://chp-sf.org/properties-landing/',  
     },
   ] 
+
+export const menuData = [
+	{
+		id: 0,
+		title: "Coffee",
+		text: "Fresh brewed coffee",
+		price: "$2.50",
+	},
+	{
+		id: 1,
+		title: "Espresso Macchiato",
+		text: "Espresso with milk foam",
+		price: "$3.50",
+	},
+	{
+		id: 2,
+		title: "Caffe Latte",
+		text: "Espresso, steamed milk and milk foam",
+		price: "$4.50",
+	},
+]; 
