@@ -1,9 +1,12 @@
 import React from 'react';
 import HealthAdditionalR from '../AdditionalReads/HealthReadsComponent';
+import SideNavigation from '../SideNavigation';
+import ModalTable from '../modalComponents/modalTable'
 
 function HealthPost(){
     return(
-    <React.Fragment> 
+    <React.Fragment>
+    <SideNavigation />     
         <div class="col-sm col-md col-lg mt-5" id="postSection">
             <h2 class="postTitle text-center mt-mb-5">Health</h2>
             <br/>
@@ -31,6 +34,7 @@ function HealthPost(){
         </div>
         <div className="mt-5">
             <HealthAdditionalR />
+            <ModalTable />
         </div>
     </React.Fragment>       
     );

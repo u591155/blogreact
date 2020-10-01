@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom'
 
-function TestNav () {
+function Nav () {
     return (
         <nav className="navbar navbar-expand-sm navbar-dark sticky-top">
         <div className="container">
@@ -10,9 +10,9 @@ function TestNav () {
             </button>
             <div className="collapse navbar-collapse" id="theBlogNavBar">   
                 <ul className="navbar-nav">
-                    <li className="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-md"/> Home</a></li>
-                    <NavLink to="/Menu"><i class="fa fa-coffee fa-md"/> Menu</NavLink>
-                    <li className="nav-item active"><a class="nav-link" href="home_blog.html"><i class="fa fa-book fa-md"/> Blog</a></li>
+                    <NavLink className="mr-3 text-light" to="/Menu"><i class="fa fa-home fa-md"/> Home </NavLink>
+                    <NavLink className="mr-3 text-light" to="/Menu"><i class="fa fa-coffee fa-md"/> Menu</NavLink>
+                    <NavLink className="mr-3 text-light" to="/HealthPage"><i class="fa fa-book fa-md"/> Blog</NavLink>
                 </ul>
             </div>   
         </div> 
@@ -20,4 +20,4 @@ function TestNav () {
     )
 }
 
-export default TestNav
+export default Nav

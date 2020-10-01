@@ -1,9 +1,12 @@
 import React from 'react';
 import PoliticalAdditionalR from '../AdditionalReads/PoliticsReadsComponent';
+import SideNavigation from '../SideNavigation';
+import ModalTable from '../modalComponents/modalTable'
 
 function PoliticsPost () {
     return(
-    <React.Fragment>  
+    <React.Fragment>
+    <SideNavigation />      
         <div class="col-sm col-md col-lg mt-5" id="postSection">
             <h2 class="postTitle text-center">Politics</h2>
             <br/>
@@ -27,6 +30,7 @@ function PoliticsPost () {
         </div>
         <div>
             <PoliticalAdditionalR />
+            <ModalTable />
         </div>
     </React.Fragment>      
     )

@@ -1,9 +1,12 @@
 import React from 'react';
-import SocietyAdditionalR from '../AdditionalReads/SocietyReadsComponent'
+import SocietyAdditionalR from '../AdditionalReads/SocietyReadsComponent';
+import SideNavigation from '../SideNavigation';
+import ModalTable from '../modalComponents/modalTable';
 
 function SocietyPost (){
     return(
-    <React.Fragment>   
+    <React.Fragment>
+    <SideNavigation />       
         <div class="col-sm col-md col-lg text-left mt-5" id="postSection">
             <h2 class="postTitle text-center">Society</h2>
             <br/>
@@ -33,6 +36,7 @@ function SocietyPost (){
         </div>
         <div>
             <SocietyAdditionalR />
+            <ModalTable />
         </div>
     </React.Fragment>     
     )

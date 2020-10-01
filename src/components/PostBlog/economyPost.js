@@ -1,9 +1,11 @@
 import React from 'react';
 import EconomyAdditionalR from '../AdditionalReads/EconomyReadsComponent'
+import SideNavigation from '../SideNavigation'
 
 function EconomyPost () {
     return(
-    <React.Fragment>   
+    <React.Fragment>
+    <SideNavigation />       
         <div className="col-sm col-md col-lg mt-5" id="postSection">
             <h2 className="postTitle text-center">Economy</h2>
             <br/>

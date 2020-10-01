@@ -1,9 +1,12 @@
 import React from 'react';
-import FitnessAdditionalR from '../AdditionalReads/FitnessReadsComponent'
+import FitnessAdditionalR from '../AdditionalReads/FitnessReadsComponent';
+import SideNavigation from '../SideNavigation';
+import ModalTable from '../modalComponents/modalTable'
 
 function FitnessPost() {
     return (
-    <React.Fragment>   
+    <React.Fragment>
+    <SideNavigation />       
         <div className="col-sm col-md col-lg text-left mt-5">
             <h2 className="postTitle text-center">Fitness</h2>
             <br/>
@@ -43,8 +46,8 @@ function FitnessPost() {
         </div>
         <div>
             <FitnessAdditionalR />
+            <ModalTable />
         </div>
-    
     </React.Fragment>     
     )
 }

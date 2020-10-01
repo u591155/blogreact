@@ -8,7 +8,7 @@ import PoliticsModal from './politicsModal';
 
 function ModalTable(){
     return(
-        <div className="container container-resources">
+        <div className="container container-resources mt-5 mb-5">
             <div className="row content">
                 <div className="col-lg-6 col-md mt-5 mr-5 text-center" id="resources">
                     Resources

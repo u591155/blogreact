@@ -3,16 +3,13 @@ import {Row} from 'reactstrap';
 import { Switch, Route} from 'react-router-dom';
 import Footer from '../components/FooterComponent';
 import Home from '../components/HomeComponent';
-import ModalTable from '../components/modalComponents/modalTable';
-import SideNavigation from './SideNavigation'
 import LawPost from './PostBlog/lawPost';
 import PoliticsPost from './PostBlog/politicsPost';
 import SocietyPost from './PostBlog/societyPost';
 import EconomyPost from './PostBlog/economyPost';
 import FitnessPost from './PostBlog/fitnessPost';
 import HealthPost from './PostBlog/healthPost';
-import PoliticsResource from './Resources/PoliticsResourceComponent';
-import TestNav from './testNav';
+import Nav from './Nav';
 import Menu from './Menu'
 
 
@@ -22,9 +19,8 @@ class Main extends Component {
         return (
 					<div className='container'>
 						<Home />
-						<TestNav />
+						<Nav />
 						<Row>
-							<SideNavigation />
 							<Switch>
 								<Route path='/Menu' component={Menu} />
 							</Switch>
@@ -47,7 +43,6 @@ class Main extends Component {
 								<Route path='/LawPage' component={LawPost} />
 							</Switch>
 						</Row>
-						<ModalTable />
 						<Footer />
 					</div>
 				);

@@ -1,9 +1,12 @@
 import React from 'react';
-import LawAdditionalR from '../AdditionalReads/LawReadsComponent'
+import LawAdditionalR from '../AdditionalReads/LawReadsComponent';
+import SideNavigation from '../SideNavigation';
+import ModalTable from '../modalComponents/modalTable';
 
 function LawPost (){
     return(
-    <React.Fragment>    
+    <React.Fragment>
+    <SideNavigation />        
         <div class="col-sm col-md col-lg mt-5" id="postSection">
             <h2 class="postTitle text-center">Law</h2>
             <br/>
@@ -49,6 +52,7 @@ function LawPost (){
         </div>
         <div>
             <LawAdditionalR />
+            <ModalTable />
         </div>
     </React.Fragment>    
     )
