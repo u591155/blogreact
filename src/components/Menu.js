@@ -1,6 +1,9 @@
 import React from "react";
-import MenuStuff from "./AdditionalReads/MenuComponent";
+import CoffeeStuff from "./AdditionalReads/CoffeeComponent";
+import DrinksStuff from "./AdditionalReads/DrinksComponent";
+import PastriesStuff from "./AdditionalReads/PastriesComponent";
 import FoodStuff from "./AdditionalReads/FoodComponent";
+import SubscriptionBox from "./AdditionalReads/SubscriptionComponent";
 
 function Menu() {
 	return (
@@ -22,10 +25,19 @@ function Menu() {
 				</p>
 			</div>
 			<div>
-				<MenuStuff />
+				<CoffeeStuff />
+			</div>
+			<div>
+				<DrinksStuff />
+			</div>
+			<div>
+				<PastriesStuff />
 			</div>
 			<div>
 				<FoodStuff />
+			</div>
+			<div>
+				<SubscriptionBox />
 			</div>
 		</React.Fragment>
 	);

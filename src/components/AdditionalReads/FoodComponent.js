@@ -7,28 +7,48 @@ class FoodStuff extends Component {
 			addProduct: [
 				{
 					id: 0,
-					image: "assets/images/menu/sandwiches.jpg",
-					text: "BLT Sandwich",
-					description: "Bacon, lettuce and tomato with aioli sauce",
+					image: "assets/images/menu/breakfast-bagel.jpg",
+					text: "Breakfast Bagel",
+					description: "Egg, cheese and your choice of ham, bacon or sausage",
+					price: "$3.50",
 				},
 				{
 					id: 1,
-					image: "assets/images/menu/pastries.jpg",
-					text: "Croissant",
-					description: "Plain, Chocolate or Almond",
+					image: "assets/images/menu/breakfast-burrito.jpg",
+					text: "Breakfast Burrito",
+					description:
+						"Egg, hash brown, cheese and your choice of ham, bacon or sausage",
+					price: "$4.50",
 				},
 				{
 					id: 2,
-					image: "assets/images/menu/pastries.jpg",
-					text: "Cinnamon Roll",
-					description: "Flaky pastry with cinnamon filling",
+					image: "assets/images/menu/Apple-Oats.jpg",
+					text: "Apple Cinnamon Oatmeal",
+					description:
+						"Steel cut oatmeal spiced with cinnamon and topped with apple slices",
+					price: "$3.25",
 				},
 				{
 					id: 3,
 					image: "assets/images/menu/sandwiches.jpg",
+					text: "BLT Sandwich",
+					description: "Bacon, lettuce and tomato with aioli sauce",
+					price: "$5.50",
+				},
+				{
+					id: 4,
+					image: "assets/images/menu/turkey-sandwich.jpg",
 					text: "Turkey Pesto Sandwich",
 					description:
 						"Turkey breast, provolone, tomato and basil pesto spread on focaccia",
+					price: "$6.00",
+				},
+				{
+					id: 5,
+					image: "assets/images/menu/tomato-grilled-cheese.jpg",
+					text: "Grilled Cheese and Tomato Soup",
+					description: "Cheddar, provolone and mozzarella on white bread",
+					price: "$7.00",
 				},
 			],
 		};
@@ -46,8 +66,9 @@ class FoodStuff extends Component {
 						/>
 						<h4 className='card-text'>{addProduct.text}</h4>
 						<div className='card-text'>{addProduct.description}</div>
+						<div className='card-text'>{addProduct.price}</div>
 						<a href='/' className='btn btn-success'>
-							Order Now!
+							Add to Cart
 						</a>
 					</div>
 				</div>
