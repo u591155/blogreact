@@ -15,7 +15,7 @@ class HealthAdditionalR extends Component {
              id:1,
              image: 'assets/images/health/health2.jpg',
              text: 'Health starts with ourselves and others around us! Health journey for you and your loved ones help you stay focus',
-             description: 'happy croud',  
+             description: 'happy crowd',  
            },
                     {
              id:2,

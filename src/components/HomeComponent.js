@@ -7,7 +7,7 @@ function Home() {
                 <div class="container" id="test">
                     <div class="row">
                         <div class="col-10 heading">
-                        <h1>The Blog!</h1>
+                        <h1>Cafe The Blog!</h1>
                         </div>
                     </div>
                 </div>

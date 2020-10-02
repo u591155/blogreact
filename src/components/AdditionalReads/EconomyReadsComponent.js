@@ -11,7 +11,7 @@ class EconomyAdditionalR extends Component {
              text: 'Save Money Help Business Small Business! Shopping locally not only helps you pocket, but it helps them stay in business.',
              description: 'Grocery', 
            },
-                    {
+          {
              id:1,
              image: 'assets/images/economy/economy2.jpg',
              text: "Count Your pennies: 5 tips on how every penny counts! Find ways to make your money last during these difficult times.",

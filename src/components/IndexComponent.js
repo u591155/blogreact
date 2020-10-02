@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import BestSellers from './AdditionalReads/BestSellersComponent';
+import NewestPosts from './AdditionalReads/NewestPostsComponent';
 
 
 function Index() {
@@ -27,7 +29,50 @@ function Index() {
 					our very own blog page! We would like to invite you to visit our page
 					and explore some of the topics that might interest you.
 				</p>
+				<br />
 			</div>
+			<div>
+				<h3>Our BestSellers:</h3>
+				<BestSellers />
+			</div>
+			<div>
+				<hr />
+				<h3>THE BLOG!</h3>
+				<p>
+					We miss the company and the conversations we used to see at our shop,
+					and thought about how great it would be to still provide a safe place
+					where people can stay informed and learn more about topics they care
+					about. We’ve created this blog as an outlet for people to not only
+					engage with each other but also a platform where can find help on
+					various issues they might be facing.
+				</p>
+				<p>
+					The articles are written by community partners who are experts on
+					their fields, and that have taken the time to share with us resources
+					that shine light in everyday issues that we all face. As part of the
+					community we called on our friends to share their knowledge in hopes
+					of maintain an open communication with all of you. Even though we have
+					to maintain our social distancing, we still want to stay connected
+					with all of you so please explore our pages and reach out to us if you
+					want us to post about a topic that interests you.
+				</p>
+				<p>
+					Here we are still together as a community, and hope that you enjoy it
+					as much as we’ve enjoyed making it for you. Stay safe and we hope to
+					see you soon. Stay healthy!
+				</p>
+				<div>
+					<h4>Our Newest Posts:</h4>
+					<NewestPosts />
+				</div>
+				<a
+					role='button'
+					class='btn fa fa-book btn-danger btn-ld'
+					href='./src/components/PostBlog/healthPost.js'>
+					MORE BLOGS!
+				</a>
+			</div>
+			<br />
 		</React.Fragment>
 	);
 }

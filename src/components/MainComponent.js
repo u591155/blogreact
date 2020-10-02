@@ -10,7 +10,8 @@ import EconomyPost from './PostBlog/economyPost';
 import FitnessPost from './PostBlog/fitnessPost';
 import HealthPost from './PostBlog/healthPost';
 import Nav from './Nav';
-import Menu from './Menu'
+import Menu from './Menu';
+import Index from './IndexComponent'
 
 
 class Main extends Component {
@@ -21,6 +22,9 @@ class Main extends Component {
 						<Home />
 						<Nav />
 						<Row>
+							<Switch>
+								<Route path='/Index' component={Index} />
+							</Switch>
 							<Switch>
 								<Route path='/Menu' component={Menu} />
 							</Switch>

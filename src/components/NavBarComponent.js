@@ -8,7 +8,7 @@ const NavBar = (props) => {
     <div>
       <Nav className="sticky-top">
         <NavItem>
-          <NavLink className="nav-item" to="#"><i className="fa fa-home fa-md"/> Home</NavLink>
+          <NavLink className="nav-item" to="/Index"><i className="fa fa-home fa-md"/> Home</NavLink>
         </NavItem>
         <NavItem>
           <NavLink to="/Menu"><i class="fa fa-coffee fa-md"/> Menu</NavLink>

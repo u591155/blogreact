@@ -9,7 +9,7 @@ class PoliticalAdditionalR extends Component {
              id:0,
              image: 'assets/images/politics/politics1.png',
              text: 'Up coming elections and how do you vote safely! All you need to know about the up coming elections and what the plan is to keep voters safe.',
-             description: 'voting', 
+             description: 'Voting', 
            },
                     {
              id:1,
